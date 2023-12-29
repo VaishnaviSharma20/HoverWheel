@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #ecf0f1;
+    }
+
+    .wheel-container {
+      width: 200px;
+      height: 200px;
+      position: relative;
+    }
+
+    .wheel {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: conic-gradient(
+        #e74c3c 0% 10%,
+        #f39c12 10% 20%,
+        #2ecc71 20% 30%,
+        #3498db 30% 40%,
+        #9b59b6 40% 50%,
+        #34495e 50% 60%,
+        #e74c3c 60% 70%,
+        #f39c12 70% 80%,
+        #2ecc71 80% 90%,
+        #3498db 90% 100%
+      );
+      position: absolute;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .wheel:hover {
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+<body>
+
+<div class="wheel-container">
+  <div class="wheel"></div>
+</div>
+
+</body>
+</html>
